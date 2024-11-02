@@ -37,8 +37,21 @@ def main():
     print("\nayan pinaglalagay mo baks:")
     for rangelabel, rangecount in rangenum.items():
         print(f"{rangelabel} = {rangecount}")
+#ask user to input again        
+
+    while True: 
+        new_input = input("ano masaya ka na ba? (ril o fik): ").strip().lower()
+        if new_input in ['ril', 'fik']:
+            if new_input == 'ril':
+                print("cge salamat baks!")
+                break
+            else:
+                main()  
+        else:
+            print("baks anong ganyan ganyann 'ril' o 'fik' lang!")
 if __name__ == "__main__":
     main()
-    print("ano masaya ka na ba?")
+
+    
 
     
