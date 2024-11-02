@@ -1,3 +1,4 @@
+#define and initialize variabl
 def main():
     rangenum = {
         "1-10": 0,
@@ -6,13 +7,16 @@ def main():
         "31-40": 0,
         "41-50": 0
     }
+#loop ask user to input numbers between 1-50
     while True:
         try:
             num = input("Baks, lagay ka number 1 - 50 (pag mali nilagay mo, idisplay ko na lang pinaglalagay mue!): ")
             num = int(num)
+#print error if not 1-50
             if num < 1 or num > 50:
                 print("woi, mali! Dapat 1 - 50 kasi, baks")
                 break 
+#store input in the variable
             else:
                 if 1 <= num <= 10:
                     rangenum["1-10"] += 1
@@ -25,12 +29,16 @@ def main():
                 elif 41 <= num <= 50:
                     rangenum["41-50"] += 1
                 print(f"yan galing! {num}")
+#prompt error when input is not a number                        
         except ValueError:
             print("Baks, mali! Parang di nag-grade 2, number nga eh!")
             break
+#display the count of each input numbers        
     print("\nayan pinaglalagay mo baks:")
     for rangelabel, rangecount in rangenum.items():
         print(f"{rangelabel} = {rangecount}")
 if __name__ == "__main__":
     main()
     print("ano masaya ka na ba?")
+
+    
