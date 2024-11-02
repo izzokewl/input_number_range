@@ -1,4 +1,4 @@
-#define and initialize variabl
+#define and initialize variable
 def main():
     rangenum = {
         "1-10": 0,
@@ -45,8 +45,6 @@ def main():
             if new_input == 'ril':
                 print("cge salamat baks!")
                 break
-            else:
-                main()  
         else:
             print("baks anong ganyan ganyann 'ril' o 'fik' lang!")
 if __name__ == "__main__":
