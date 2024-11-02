@@ -24,6 +24,7 @@ def main():
                     rangenum["31-40"] += 1
                 elif 41 <= num <= 50:
                     rangenum["41-50"] += 1
+                print(f"yan galing! {num}")
         except ValueError:
             print("Baks, mali! Parang di nag-grade 2, number nga eh!")
             break
