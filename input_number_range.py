@@ -45,6 +45,8 @@ def main():
             if new_input == 'ril':
                 print("cge salamat baks!")
                 break
+            else:
+                main()  
         else:
             print("baks anong ganyan ganyann 'ril' o 'fik' lang!")
 if __name__ == "__main__":
